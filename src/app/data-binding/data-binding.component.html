@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>This is string Interpolation example: </h3>
+            <h4 class="text-primary">
+                Hello, <span class="text-danger">{{userName}}</span>. Your Pin is <span
+                    class="text-danger">{{passWord}}</span>
+            </h4>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>This is property binding example: </h3>
+            <p>normally the button is disable, but after the 5 sec , the button will be active !</p>
+            <button class="btn btn-info" [disabled]="!myBtn">Click Me</button>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>This is event binding example: </h3>
+
+            <button class="btn btn-primary" (click)="addNewUser()">Add a user</button>
+            <p class="text-danger"> {{addUser}} </p>
+
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>This is two way binding example: </h3>
+            <input [(ngModel)]="updateUser" class="form-control w-25" type="text">
+
+        </div>
+        <div>{{updateUser}}  </div>
+    </div>
+</div>
